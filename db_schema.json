@@ -1,0 +1,39 @@
+{
+	"organisations": [
+		{
+			"logo": "string",
+			"title": "string",
+			"createdAt": "timestamp",
+			"updatedAt": "timestamp",
+			"users": {
+				"user_uid": "role_within_org"
+			}
+		}
+	],
+	"users": [
+		{
+			"email": "string",
+			"username": "string",
+			"createdAt": "timestamp",
+			"updatedAt": "timestamp",
+			"organisation": {
+				"organisation_uid": "role_within_org"
+			}
+		}
+	],
+	"projects": [
+		{
+			"type": "string",
+			"logo": "string",
+			"title": "string",
+			"sharing": "boolean",
+			"description": "string",
+			"createdAt": "timestamp",
+			"updatedAt": "timestamp",
+			"creator": "creator_user_uid",
+			"users": [
+				"user_uid"
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"baseUrl": "./src",
+		"paths": {
+			"app/*": ["./*"],
+		},
+		"moduleResolution": "node",
+	},
+	"include": ["src/**/*"],
+	"vueCompilerOptions": {
+		"target": 2
+	}
+}

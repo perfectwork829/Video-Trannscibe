@@ -1,0 +1,43 @@
+.table {
+  td {
+    vertical-align: middle;
+  }
+
+  .td-info-content {
+    display: flex;
+    align-items: center;
+
+    .info-icon {
+      font-size: 40px;
+      width: 40px;
+      text-align: center;
+      margin-right: 10px;
+      color: #5d78ff;
+    }
+
+    .info-text-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h5 {
+        cursor: pointer;
+        color: white;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        margin: 5px 0 0 0;
+        font-size: 0.75rem;
+        line-height: 1;
+        color: #a1a0a7;
+      }
+    }
+  }
+}

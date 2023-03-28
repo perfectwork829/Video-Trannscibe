@@ -1,0 +1,141 @@
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #5d78ff;
+  border-color: #5d78ff;
+  outline: 0 !important;
+
+  &:disabled {
+    background-color: #5d78ff;
+    border-color: #5d78ff;
+  }
+}
+
+.btn-primary:hover:not(:disabled) {
+  color: #fff;
+  background-color: #3758ff;
+  border-color: #2a4eff;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0rem rgb(117 140 255 / 50%);
+}
+
+.btn-outline-primary {
+  color: #5d78ff;
+  border-color: #5d78ff;
+
+  &:disabled {
+    color: #5d78ff;
+    border-color: #5d78ff;
+  }
+}
+
+.btn-outline-primary:hover:not(:disabled) {
+  color: #fff;
+  background-color: #5d78ff;
+  border-color: #5d78ff;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  box-shadow: 0 0 0 0rem rgb(93 120 255 / 50%);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #5d78ff;
+  border-color: #5d78ff;
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  appearance: none;
+}
+
+button:not(:disabled),
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #10d876;
+  border-color: #10d876;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.edmon-btn-pencil {
+  display: inline-block;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 5px;
+  font-size: 12px;
+  background: transparent !important;
+  color: #5d78ff;
+
+  &:hover:not(:disabled) {
+    color: #3758ff;
+  }
+
+  &:focus {
+    color: #3758ff;
+  }
+
+  &:active {
+    color: #3758ff;
+  }
+}
+
+.edmon-btn-trash {
+  display: inline-block;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 5px;
+  font-size: 12px;
+  background: transparent !important;
+  color: #e50202;
+
+  &:hover:not(:disabled) {
+    color: #dc3545;
+  }
+
+  &:focus {
+    color: #dc3545;
+  }
+
+  &:active {
+    color: #dc3545 !important;
+  }
+}

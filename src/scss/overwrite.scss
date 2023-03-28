@@ -1,0 +1,13 @@
+.badge {
+	font-weight: normal;
+	vertical-align: middle;
+
+	&:not(:last-child) {
+		margin-right: 5px;
+	}
+
+	&.sm {
+		font-size: 0.6rem;
+		padding: 4px 10px;
+	}
+}

@@ -1,0 +1,45 @@
+.authincation {
+  height: 100%;
+}
+
+.auth-form {
+  border: 0px solid #363c4e;
+
+  .page-back {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .verification {
+    height: 100%;
+  }
+
+  .identity-content {
+    text-align: center;
+
+    .icon {
+      display: flex;
+      width: 75px;
+      height: 75px;
+      border-radius: 100px;
+      margin: 0 auto;
+      background: #10d876;
+      color: #097942;
+      font-size: 30px;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      max-width: 350px;
+      margin: 0 auto 15px;
+    }
+
+    p {
+      max-width: 350px;
+      margin: 0 auto 30px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+a {
+  color: #5d78ff;
+  text-decoration: underline;
+}
+
+.close {
+  float: right;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.thumb-style {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #5d78ff;
+  border: 1px solid #2a4eff;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 5000;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.thumb-style_hover {
+  background: #2a4eff;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.edmon-tags-input {
+  .b-form-tag-content {
+    color: #a1a0a7;
+    font-size: 1rem;
+  }
+
+  .b-form-tags-input {
+    color: #a1a0a7;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a.link {
+  cursor: pointer;
+}
+
+.text-primary {
+  color: #5d78ff !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

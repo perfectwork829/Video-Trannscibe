@@ -1,0 +1,183 @@
+#projects-tab {
+	border-top-left-radius: 0;
+	margin-bottom: 0;
+	height: 100%;
+
+	.card-header {
+		border-top-left-radius: 0;
+	}
+}
+
+#dashboard-page {
+	.project-wrapper {
+		flex: 1 1 100%;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.search-bar {
+		width: 100%;
+		height: 38px;
+	}
+
+	.ui-autocomplete {
+		background: #4a4a4a;
+		border-radius: 0px;
+		max-width: 300px;
+		z-index: 200;
+	}
+
+	.ui-menu {
+		.ui-menu-item {
+			color: white;
+			border-radius: 0px;
+			margin-left: 10px;
+
+			&:hover {
+				background: #656565;
+			}
+		}
+	}
+
+	.deleteField {
+		position: absolute;
+		right: 0;
+		cursor: pointer;
+
+		&:hover {
+			color: red;
+		}
+	}
+
+	.tab-wrapper {
+		margin-top: 20px;
+	}
+
+	.search-item-title {
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		.input-group-text {
+			border: none;
+		}
+	}
+
+	.project-list {
+		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+
+		.project-item {
+			padding: 1rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			&-content {
+				// flex: 1;
+				display: flex;
+				align-items: center;
+
+				.project-item-title {
+					cursor: pointer;
+					color: white;
+					margin: 0;
+					font-size: 1rem;
+					font-weight: 500;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+
+				.project-item-description {
+					font-size: 0.75rem;
+					line-height: 1;
+					color: #a1a0a7;
+				}
+			}
+
+			&-action {
+				display: flex;
+				justify-content: flex-end;
+
+				.btnProjectEdit {
+					display: inline-block;
+					padding: 5px;
+					font-size: 18px;
+				}
+
+			}
+		}
+	}
+
+	.folder-star-wrapper {
+		display: inline-flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		margin-right: 10px;
+
+		.project-icon {
+			font-size: 40px;
+			color: #5d78ff;
+		}
+
+		.project-star {
+			position: absolute;
+			width: 40px;
+			font-size: 16px;
+			color: white;
+			left: 50%;
+			top: calc(50% + 2px);
+			transform: translate(-50%, -50%);
+		}
+	}
+
+
+
+}
+
+#searchEdit {
+	min-height: 38px;
+}
+
+#btnSearch {
+	height: 100%;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.project-icon {
+		font-size: 18px;
+		font-weight: 900;
+	}
+}
+
+#btnNewProject {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px;
+	height: 38px;
+	height: 100%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+
+	.project-icon {
+		font-size: 24px;
+	}
+}
+
+#inputParticipants {
+	border: none;
+	background-image: none;
+}

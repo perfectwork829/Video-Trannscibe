@@ -1,0 +1,122 @@
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(161, 160, 167);
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-color: rgb(161, 160, 167);
+  }
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 0px 15px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(161, 160, 167);
+  transition: border 0.3s ease-in-out;
+  background-color: #000;
+  min-height: 38px;
+  box-shadow: none !important;
+  outline: none !important;
+
+  &.bordered {
+    border: 1px solid;
+  }
+
+  .select {
+    padding: 12px 0;
+  }
+
+  &::-webkit-input-placeholder {
+    color: var(--gray);
+  }
+
+  &:-ms-input-placeholder {
+    color: var(--gray);
+  }
+
+  &::placeholder {
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+
+  &:hover {
+    border-color: var(--gray);
+    color: rgb(161, 160, 167);
+    background-color: #000;
+  }
+
+  &:focus,
+  &:active,
+  &.active {
+    border-color: #5d78ff !important;
+    color: rgb(161, 160, 167);
+    background-color: #000;
+  }
+}
+
+// /*Styling Selectbox*/
+
+.toggle {
+  cursor: pointer;
+  display: block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background-color: darken(#000, 3%);
+  border-radius: 16px;
+  width: 45px;
+  height: 20px;
+  position: relative;
+  vertical-align: middle;
+  transition: background-color 0.25s;
+  border: 1px solid #131722;
+
+  &:before,
+  &:after {
+    content: '';
+  }
+
+  &:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    transition: left 0.25s;
+  }
+
+  .toggle:hover &:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  }
+
+  .toggle-checkbox:checked+& {
+    background: #5d78ff;
+
+    &:before {
+      left: 26px;
+    }
+  }
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  position: relative;
+  top: 2px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}

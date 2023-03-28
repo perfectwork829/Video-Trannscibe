@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "logmonster-51e0a"
+  },
+  "targets": {
+    "logmonster-51e0a": {
+      "hosting": {
+        "edmonvueapp": [
+          "edmonvueapp"
+        ],
+        "edmon-test": [
+          "edmon-test"
+        ]
+      }
+    }
+  }
+}

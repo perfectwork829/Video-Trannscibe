@@ -1,0 +1,7 @@
+{
+	"indentStyle": "space",
+	"indentSize": 2,
+	"printWidth": 120,
+	"singleQuote": true,
+	"vueIndentScriptAndStyle": true
+}
